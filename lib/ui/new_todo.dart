@@ -132,8 +132,6 @@ class _NewTodoState extends State<NewTodo> {
   Future onSelectNotification(String payload) async {
     if (payload != null) {
       print(payload);
-      await Navigator.push(context,
-          MaterialPageRoute(builder: (context) => TodoList(payload: payload)));
     }
   }
 
